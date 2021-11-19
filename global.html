@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script language="javascript">
+      function remplir() {
+        const v = [];
+        var l = +prompt("entrez la taille du vecteur");
+        for (let i = 0; i < l; i++) {
+          var el = +prompt("donnez l'élément");
+          v.push(el);
+        }
+        console.log(v);
+        return v;
+      }
+      function product(v1, v2) {
+        if (v1.length == v2.length) {
+          for (let i = 0; i < v1.length; i++) {
+            produit.push(v1[i] * v2[i]);
+          }
+          console.log(produit);
+        } else {
+          confirm("entrez deux vecteurs de meme dimension!");
+        }
+      }
+      var v1 = remplir();
+      var v2 = remplir();
+      var produit = [];
+      product(v1, v2);
+      if (produit == 0) {
+        console.log(`vecteurs ortho`);
+      } else {
+        console.log(`vecteurs non ortho`);
+      }
+    </script>
+  </body>
+</html>
